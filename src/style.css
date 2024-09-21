@@ -1,7 +1,9 @@
 /* Default Background */ 
 
-html {
+html, body {
     scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -12,10 +14,41 @@ body {
     height: 100vh;
 }
 
-section {
-    font-size: 2rem;
-    padding: 2rem;
-    background-color: #333;
+.section1 {
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    gap: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(160, 162, 157, 0.5);
+    z-index: 10;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container #main-tomato {
+    display: block;
+}
+
+.arrow-container {
+    padding: 5px;
+    font-size: 10px;
+    background-color: rgba(160, 162, 157, 0.3);
+    position: absolute;
+    left: 47%;
+    bottom: 20%;
+    text-align: center;
+    z-index: 5;
     color: white;
 }
 
@@ -24,4 +57,13 @@ section {
     width: 100%;
     z-index: -1;
     object-fit: cover;
+}
+
+
+#section2 {
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: rgba(145, 173, 114, 0.5);
+    color: white;
+    height: 200vh;
 }
