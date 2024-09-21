@@ -1,7 +1,15 @@
 /* Default Background */ 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
+}
+
+.wrapper {
+    height: 100vh;
 }
 
 section {
@@ -14,4 +22,6 @@ section {
 #main-tomato {
     height: 85%;
     width: 100%;
+    z-index: -1;
+    object-fit: cover;
 }
