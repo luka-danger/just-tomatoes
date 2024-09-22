@@ -1,6 +1,55 @@
 import "./style.css";
 import tomatoImage1 from './images/tomatoes3.jpg';
 import tomatoImage2 from './images/tomatoes6.png';
+import downArrowImage from './images/down-arrow.png';
+
+function makeTitle() {
+    // Select the wrapper element
+    const wrapper = document.querySelector('.wrapper');
+
+    // Create Content Div
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'image-container';
+    wrapper.appendChild(imageContainer)
+
+    // Create Homepage Container
+    const homeContainer = document.createElement('div');
+    homeContainer.className = 'homepage-container';
+    imageContainer.appendChild(homeContainer);
+
+    // Create Title Container
+    const titleContainer = document.createElement('div');
+    titleContainer.className = 'title-container';
+    titleContainer.id = 'home';
+    homeContainer.appendChild(titleContainer)
+
+    // Create h1 element for title container
+    const h1Title = document.createElement('h1');
+    h1Title.className = 'title';
+    h1Title.textContent = 'Just Tomatoes';
+    titleContainer.appendChild(h1Title);
+
+    // Create Down Arrow Container
+    const downArrowContainer = document.createElement('div');
+    downArrowContainer.className = 'arrow-container';
+    homeContainer.appendChild(downArrowContainer)
+
+    // Create h1 element for arrow container
+    const h1Arrow = document.createElement('h1');
+    h1Arrow.textContent = 'Learn More';
+    downArrowContainer.appendChild(h1Arrow);
+
+    // Create Down Arrow Link
+    const arrowLink = document.createElement('a');
+    arrowLink.href = '#content';
+    downArrowContainer.appendChild(arrowLink);
+
+    // Create the image element
+    const arrowImg = document.createElement('img');
+    arrowImg.src = downArrowImage;
+    arrowImg.className = 'down-arrow';
+    arrowLink.appendChild(arrowImg);
+}
 
 function makeHomepage() {
     // Create content div 
@@ -87,6 +136,8 @@ function makeHomepage() {
     // Append the content div to the body or another element
     document.body.appendChild(contentDiv);
 }
+
+makeTitle()
 
 makeHomepage()
 
