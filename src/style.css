@@ -23,7 +23,7 @@ body {
     overflow: hidden;
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -153,7 +153,8 @@ nav {
     justify-content: center;
 }
 
-#content-image {
+#content-image-left,
+#content-image-right {
     height: 80%;
     width: 80%;
 }
