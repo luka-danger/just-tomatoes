@@ -62,8 +62,8 @@ function makeHomepage() {
     textDiv.textContent = "Welcome to Just Tomatoes! Where we serve, you guessed it - just tomatoes.\
     Our tomatoes are the freshest tomatoes in town. And the next town. Our chefs specialize in\
     tomatoes of every kind. Whole tomatoes, chopped tomatoes, fried tomatoes, sauteed tomatoes. Try our\
-    award winning ketchup, served with every tomato entree. Don't like tomatoes? Well, you've\
-    never tried our tomatoes. Still don't like tomatoes? Then try our sister store - just peaches.\
+    award winning tomato ketchup, served with every tomato entree. Don't like tomatoes? Well, you've\
+    never tried our tomatoes. Still don't like tomatoes? Then try our sister restaurant - just peaches.\
     Where everything on the menu is...you guessed it again - just peaches!";
 
     // Create order button div 
