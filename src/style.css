@@ -189,7 +189,7 @@ footer {
 
 
 /* ORDER ONLINE */
-.contact-container {
+.order-container {
     background-image: url(images/tomatoes4.jpg);
     background-size: cover;
     background-position: center;
@@ -199,8 +199,10 @@ footer {
     justify-content: center;
 }
 
+
 .announcement-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;

@@ -4,14 +4,14 @@ function makeOrderOnline() {
     contentContainer.innerHTML = '';
 
     // Create Content Div
-    const contactContainer = document.createElement('div');
-    contactContainer.className = 'contact-container';
-    contentContainer.appendChild(contactContainer);
+    const orderContainer = document.createElement('div');
+    orderContainer.className = 'order-container';
+    contentContainer.appendChild(orderContainer);
 
     // Make Announcement Div
     const announcementContainer = document.createElement('div');
     announcementContainer.className = 'announcement-container';
-    contactContainer.appendChild(announcementContainer)
+    orderContainer.appendChild(announcementContainer)
 
     // Make Announcement
     const orderAnnouncement = document.createElement('h1');
