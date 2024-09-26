@@ -1,11 +1,12 @@
 function makeOrderOnline() {
     // Select the wrapper element
-    const wrapper = document.querySelector('.wrapper');
+    const contentContainer = document.querySelector('.content-container');
+    contentContainer.innerHTML = '';
 
     // Create Content Div
     const contactContainer = document.createElement('div');
     contactContainer.className = 'contact-container';
-    wrapper.appendChild(contactContainer);
+    contentContainer.appendChild(contactContainer);
 
     // Make Announcement Div
     const announcementContainer = document.createElement('div');

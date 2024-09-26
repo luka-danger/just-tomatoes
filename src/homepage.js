@@ -3,15 +3,16 @@ import tomatoImage1 from './images/tomatoes3.jpg';
 import tomatoImage2 from './images/tomatoes6.png';
 import downArrowImage from './images/down-arrow.png';
 
-function makeTitle() {
+function makeHomepage() {
     // Select the wrapper element
-    const wrapper = document.querySelector('.wrapper');
+    const contentContainer = document.querySelector('.content-container');
+    contentContainer.innerHTML = '';
 
     // Create Content Div
     const imageContainer = document.createElement('div');
     imageContainer.className = 'image-container';
-    wrapper.appendChild(imageContainer)
-
+    contentContainer.appendChild(imageContainer)
+3
     // Create Homepage Container
     const homeContainer = document.createElement('div');
     homeContainer.className = 'homepage-container';
@@ -49,9 +50,7 @@ function makeTitle() {
     arrowImg.src = downArrowImage;
     arrowImg.className = 'down-arrow';
     arrowLink.appendChild(arrowImg);
-}
 
-function makeHomepage() {
     // Create content div 
     const contentDiv = document.createElement('div');
     contentDiv.id = 'content';
@@ -134,8 +133,9 @@ function makeHomepage() {
     contentDiv.appendChild(leftRightDiv);
 
     // Append the content div to the body or another element
-    document.body.appendChild(contentDiv);
+    //document.body.appendChild(contentDiv);
+    contentContainer.appendChild(contentDiv)
 }
 
 // Export functions 
-export { makeTitle, makeHomepage };
+export { makeHomepage };

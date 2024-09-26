@@ -1,10 +1,18 @@
 import "./style.css";
-import { makeTitle, makeHomepage } from './homepage'
+import { makeHomepage } from './homepage'
 import { makeOrderOnline } from "./order";
 
+
 document.getElementById('home-btn').addEventListener('click', function () {
-    makeTitle();
     makeHomepage();
+});
+
+document.getElementById('menu-btn').addEventListener('click', function () {
+    makeOrderOnline();
+});
+
+document.getElementById('contact-btn').addEventListener('click', function () {
+    makeOrderOnline();
 });
 
 
