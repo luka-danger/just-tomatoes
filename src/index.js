@@ -3,6 +3,7 @@ import { makeHomepage } from './homepage'
 import { makeOrderOnline } from "./order";
 import { makeContactPage } from "./contact";
 import { makeHoursPage } from "./hours";
+import { makeMenuPage } from "./menu";
 
 
 makeHomepage();
@@ -11,14 +12,12 @@ document.getElementById('home-btn').addEventListener('click', function () {
     makeHomepage();
 });
 
-document.getElementById('order-btn').addEventListener('click', function () {
-    // FIX ME 
-    // Only works on first load of page. WHY?
-    makeOrderOnline();
+document.getElementById('view-btn').addEventListener('click', function () {
+    makeMenuPage();
 });
 
 document.getElementById('menu-btn').addEventListener('click', function () {
-    // FIX ME 
+    makeMenuPage();
 });
 
 document.getElementById('hours-btn').addEventListener('click', function () {
