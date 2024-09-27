@@ -199,12 +199,17 @@ footer {
     justify-content: center;
 }
 
+.contact-announcement-container, 
+.hours-announcement-container,
 .announcement-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.announcement-container {
     margin-bottom: 150px;
 }
 
@@ -232,4 +237,9 @@ footer {
 
 .hours {
     color: white;
+}
+
+.tomato-image {
+    height: 25%;
+    width: 25%;
 }

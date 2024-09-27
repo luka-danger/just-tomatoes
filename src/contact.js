@@ -1,3 +1,5 @@
+import tomatoImage2 from './images/tomatoes2.jpg';
+
 function makeContactPage() {
     // Select the wrapper element
     const contentContainer = document.querySelector('.content-container');
@@ -10,7 +12,7 @@ function makeContactPage() {
 
     // Make Announcement Div
     const announcementContainer = document.createElement('div');
-    announcementContainer.className = 'announcement-container';
+    announcementContainer.className = 'contact-announcement-container';
     contactContainer.appendChild(announcementContainer)
 
     const callUs = document.createElement('h1');
@@ -22,6 +24,12 @@ function makeContactPage() {
     emailUs.className = 'contact-announcement';
     emailUs.textContent = 'For any other inquiries, email us at nate@justtomatoes.com '
     announcementContainer.appendChild(emailUs);
+
+    // Add Image
+    const tomatoImage = document.createElement('img');
+    tomatoImage.src = tomatoImage2;
+    tomatoImage.className = 'tomato-image';
+    announcementContainer.appendChild(tomatoImage);
  
 }
 

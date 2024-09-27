@@ -1,3 +1,5 @@
+import tomatoImage2 from './images/tomatoes2.jpg';
+
 function makeHoursPage() {
     // Select the wrapper element
     const contentContainer = document.querySelector('.content-container');
@@ -10,7 +12,7 @@ function makeHoursPage() {
 
     // Make Announcement Div
     const announcementContainer = document.createElement('div');
-    announcementContainer.className = 'announcement-container';
+    announcementContainer.className = 'hours-announcement-container';
     contactContainer.appendChild(announcementContainer)
 
     const hours = document.createElement('h1');
@@ -22,6 +24,12 @@ function makeHoursPage() {
     hours2.className = 'hours';
     hours2.textContent = 'Closed Mondays';
     announcementContainer.appendChild(hours2);
+
+    // Add Image
+    const tomatoImage = document.createElement('img');
+    tomatoImage.src = tomatoImage2;
+    tomatoImage.className = 'tomato-image';
+    announcementContainer.appendChild(tomatoImage);
  
 }
 
