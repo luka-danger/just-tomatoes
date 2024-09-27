@@ -11,6 +11,12 @@ document.getElementById('home-btn').addEventListener('click', function () {
     makeHomepage();
 });
 
+document.getElementById('order-btn').addEventListener('click', function () {
+    // FIX ME 
+    // Only works on first load of page. WHY?
+    makeOrderOnline();
+});
+
 document.getElementById('menu-btn').addEventListener('click', function () {
     // FIX ME 
 });
@@ -28,9 +34,6 @@ document.getElementById('online-btn').addEventListener('click', function () {
     makeOrderOnline();
 });
 
-document.getElementById('order-btn').addEventListener('click', function () {
-    makeOrderOnline();
-});
 
 
 
