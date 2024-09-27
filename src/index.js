@@ -1,6 +1,8 @@
 import "./style.css";
 import { makeHomepage } from './homepage'
 import { makeOrderOnline } from "./order";
+import { makeContactPage } from "./contact";
+import { makeHoursPage } from "./hours";
 
 
 document.getElementById('home-btn').addEventListener('click', function () {
@@ -8,11 +10,15 @@ document.getElementById('home-btn').addEventListener('click', function () {
 });
 
 document.getElementById('menu-btn').addEventListener('click', function () {
-    makeOrderOnline();
+    // FIX ME 
+});
+
+document.getElementById('hours-btn').addEventListener('click', function () {
+    makeHoursPage();
 });
 
 document.getElementById('contact-btn').addEventListener('click', function () {
-    makeOrderOnline();
+    makeContactPage();
 });
 
 

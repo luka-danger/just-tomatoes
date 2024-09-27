@@ -199,7 +199,6 @@ footer {
     justify-content: center;
 }
 
-
 .announcement-container {
     display: flex;
     flex-direction: column;
@@ -216,3 +215,21 @@ footer {
 }
 
 /* CONTACT US*/
+.contact-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.818));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-announcement {
+    color: white;
+}
+
+.hours {
+    color: white;
+}
