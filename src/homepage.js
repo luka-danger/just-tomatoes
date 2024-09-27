@@ -74,8 +74,8 @@ function makeHomepage() {
     orderLink.href = '#';
 
     const orderButton = document.createElement('button');
-    orderButton.id = 'order-btn';
-    orderButton.textContent = 'Order Now!';
+    orderButton.id = 'view-btn';
+    orderButton.textContent = 'View Menu!';
 
     // Append button to link and link to button div
     orderLink.appendChild(orderButton);
