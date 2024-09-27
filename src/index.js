@@ -5,6 +5,8 @@ import { makeContactPage } from "./contact";
 import { makeHoursPage } from "./hours";
 
 
+makeHomepage();
+
 document.getElementById('home-btn').addEventListener('click', function () {
     makeHomepage();
 });
@@ -25,6 +27,12 @@ document.getElementById('contact-btn').addEventListener('click', function () {
 document.getElementById('online-btn').addEventListener('click', function () {
     makeOrderOnline();
 });
+
+document.getElementById('order-btn').addEventListener('click', function () {
+    makeOrderOnline();
+});
+
+
 
 
 
