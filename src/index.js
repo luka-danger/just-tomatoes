@@ -12,10 +12,6 @@ document.getElementById('home-btn').addEventListener('click', function () {
     makeHomepage();
 });
 
-document.getElementById('view-btn').addEventListener('click', function () {
-    makeMenuPage();
-});
-
 document.getElementById('menu-btn').addEventListener('click', function () {
     makeMenuPage();
 });
