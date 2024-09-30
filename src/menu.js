@@ -124,7 +124,10 @@ function makeMenuPage() {
     sidesHeader.appendChild(sideItem);
 
     // Gratuity Note
-
+    const gratuityNote = document.createElement('p');
+    entree2Asterik.className = 'gratuity-note'
+    gratuityNote.textContent = 'A 30% Service Charge Is Automatically Added To All Tables';
+    menuItems.appendChild(gratuityNote);
 
 }
 
