@@ -196,7 +196,7 @@ footer {
 }
 
 .menu-header {
-    font-size: 50px;
+    font-size: 3rem;
 }
 
 .menu-items {
@@ -204,11 +204,11 @@ footer {
 }
 
 .menu-item {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .item-description {
-    font-size: 17px;
+    font-size: 1.5rem;
     margin-top: -10px;
 }
 
@@ -284,6 +284,8 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
-    
+/* 
+@media screen and (max-width: 500px) {
+   
 }
+*/
