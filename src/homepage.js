@@ -2,6 +2,8 @@
 import tomatoImage1 from './images/tomatoes3.jpg';
 import tomatoImage2 from './images/tomatoes6.png';
 import downArrowImage from './images/down-arrow.png';
+import { makeMenuPage } from './menu';
+
 
 function makeHomepage() {
     // Select the wrapper element
@@ -76,7 +78,8 @@ function makeHomepage() {
     const orderButton = document.createElement('button');
     orderButton.id = 'view-btn';
     orderButton.textContent = 'View Menu!';
-
+    orderButton.addEventListener("click", makeMenuPage);
+    
     // Append button to link and link to button div
     orderLink.appendChild(orderButton);
     buttonDiv.appendChild(orderLink);
