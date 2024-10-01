@@ -9,6 +9,9 @@ This project is a restaurant website built using JavaScript, CSS, and Webpack. I
 ## Links:
 The full challenge description can be found here: https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page. 
 
+## Demo: 
+![Homepage](screenshots/demo.mp4)
+
 ## Screenshots: 
 ![Homepage](screenshots/title.png)
 
